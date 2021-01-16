@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		BF996EA925B3560B00E8914A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF996EA825B3560B00E8914A /* AppDelegate.swift */; };
 		BF996EAB25B3560B00E8914A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF996EAA25B3560B00E8914A /* SceneDelegate.swift */; };
-		BF996EAD25B3560B00E8914A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF996EAC25B3560B00E8914A /* ViewController.swift */; };
 		BF996EB025B3560B00E8914A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF996EAE25B3560B00E8914A /* Main.storyboard */; };
 		BF996EB225B3560D00E8914A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF996EB125B3560D00E8914A /* Assets.xcassets */; };
 		BF996EB525B3560D00E8914A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF996EB325B3560D00E8914A /* LaunchScreen.storyboard */; };
 		BF996EC025B3560D00E8914A /* PunkAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF996EBF25B3560D00E8914A /* PunkAPPTests.swift */; };
 		BF996ECB25B3560D00E8914A /* PunkAPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF996ECA25B3560D00E8914A /* PunkAPPUITests.swift */; };
+		BF996EE425B35B4200E8914A /* BeerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF996EE325B35B4200E8914A /* BeerListTableViewController.swift */; };
+		BF996EED25B35C8200E8914A /* PunkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF996EEC25B35C8200E8914A /* PunkService.swift */; };
+		BF996EF625B35D2C00E8914A /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF996EF525B35D2C00E8914A /* BeerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,6 @@
 		BF996EA525B3560B00E8914A /* PunkAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PunkAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF996EA825B3560B00E8914A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF996EAA25B3560B00E8914A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF996EAC25B3560B00E8914A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF996EAF25B3560B00E8914A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF996EB125B3560D00E8914A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF996EB425B3560D00E8914A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		BF996EC625B3560D00E8914A /* PunkAPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PunkAPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF996ECA25B3560D00E8914A /* PunkAPPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkAPPUITests.swift; sourceTree = "<group>"; };
 		BF996ECC25B3560D00E8914A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF996EE325B35B4200E8914A /* BeerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListTableViewController.swift; sourceTree = "<group>"; };
+		BF996EEC25B35C8200E8914A /* PunkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkService.swift; sourceTree = "<group>"; };
+		BF996EF525B35D2C00E8914A /* BeerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,11 @@
 		BF996EA725B3560B00E8914A /* PunkAPP */ = {
 			isa = PBXGroup;
 			children = (
+				BF996EF425B35D1C00E8914A /* Models */,
+				BF996EEB25B35C4A00E8914A /* Networking */,
+				BF996EE125B35B0600E8914A /* Scenes */,
 				BF996EA825B3560B00E8914A /* AppDelegate.swift */,
 				BF996EAA25B3560B00E8914A /* SceneDelegate.swift */,
-				BF996EAC25B3560B00E8914A /* ViewController.swift */,
 				BF996EAE25B3560B00E8914A /* Main.storyboard */,
 				BF996EB125B3560D00E8914A /* Assets.xcassets */,
 				BF996EB325B3560D00E8914A /* LaunchScreen.storyboard */,
@@ -126,6 +132,38 @@
 				BF996ECC25B3560D00E8914A /* Info.plist */,
 			);
 			path = PunkAPPUITests;
+			sourceTree = "<group>";
+		};
+		BF996EE125B35B0600E8914A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BF996EE225B35B1000E8914A /* BeerList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		BF996EE225B35B1000E8914A /* BeerList */ = {
+			isa = PBXGroup;
+			children = (
+				BF996EE325B35B4200E8914A /* BeerListTableViewController.swift */,
+			);
+			path = BeerList;
+			sourceTree = "<group>";
+		};
+		BF996EEB25B35C4A00E8914A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BF996EEC25B35C8200E8914A /* PunkService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BF996EF425B35D1C00E8914A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BF996EF525B35D2C00E8914A /* BeerModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF996EAD25B3560B00E8914A /* ViewController.swift in Sources */,
 				BF996EA925B3560B00E8914A /* AppDelegate.swift in Sources */,
 				BF996EAB25B3560B00E8914A /* SceneDelegate.swift in Sources */,
+				BF996EE425B35B4200E8914A /* BeerListTableViewController.swift in Sources */,
+				BF996EF625B35D2C00E8914A /* BeerModel.swift in Sources */,
+				BF996EED25B35C8200E8914A /* PunkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
