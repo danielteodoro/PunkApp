@@ -10,11 +10,11 @@ import UIKit
 class BeerModel: Codable {
     
     var id: Int
-    var name: String?
-    var imageUrl: String?
-    var tagline: String?
-    var description: String?
-    var abv: Float?
+    var name: String
+    var imageUrl: String
+    var tagline: String
+    var description: String
+    var abv: Float
     var ibu: Float?
 
     enum CodingKeys: String, CodingKey {

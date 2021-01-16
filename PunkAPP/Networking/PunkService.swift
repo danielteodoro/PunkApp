@@ -7,9 +7,13 @@
 
 import UIKit
 
-class PunkService: URLSession {
+protocol WebServicing {
+    func fetchBeerList(completion: ((Result<[BeerModel], Error>) -> Void)?)
+}
+
+class PunkService: WebServicing {
     
-    func getBeerList(completion: ((Result<[BeerModel], Error>) -> Void)?) {
+    func fetchBeerList(completion: ((Result<[BeerModel], Error>) -> Void)?) {
         var request = URLRequest(url: URL(string: "https://api.punkapi.com/v2/beers")!)
         request.httpMethod = "GET"
         
