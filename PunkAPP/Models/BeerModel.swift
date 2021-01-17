@@ -5,7 +5,7 @@
 //  Created by Daniel Teodoro on 16/01/21.
 //
 
-import UIKit
+import Foundation
 
 class BeerModel: Codable {
     

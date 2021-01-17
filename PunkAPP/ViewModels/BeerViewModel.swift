@@ -19,8 +19,28 @@ class BeerViewModel {
         return self.beer.name
     }
     
+    var tagline: String {
+        return self.beer.tagline
+    }
+    
+    var description: String {
+        return self.beer.description
+    }
+    
+    var bitterness: String {
+        if let bitterness: Float = self.beer.ibu {
+            return String("Amargura: \(bitterness)")
+        } else {
+            return("Amargura não especificada")
+        }
+    }
+    
     var alcoholContent: String {
-        return String("Conteúdo alcoólico: \(self.beer.abv)%")
+        return String("C.A.: \(self.beer.abv)%")
+    }
+    
+    var beerImageURL: URL? {
+        return URL(string: beer.imageUrl)
     }
 
 }
