@@ -29,14 +29,14 @@ class BeerViewModel {
     
     var bitterness: String {
         if let bitterness: Float = self.beer.ibu {
-            return String("Amargura: \(bitterness)")
+            return String("IBU: \(bitterness)")
         } else {
-            return("Amargura não especificada")
+            return("IBU undefined")
         }
     }
     
     var alcoholContent: String {
-        return String("C.A.: \(self.beer.abv)%")
+        return String("ABV: \(self.beer.abv)%")
     }
     
     var beerImageURL: URL? {
