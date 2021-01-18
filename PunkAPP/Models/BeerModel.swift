@@ -7,7 +7,7 @@
 
 import Foundation
 
-class BeerModel: Codable {
+struct BeerModel: Decodable {
     
     var id: Int
     var name: String

@@ -14,13 +14,14 @@ protocol BeerListViewModelDelegate {
 
 class BeerListViewModel {
     
-    var service: PunkService = PunkService()
+    var service: PunkServicing
     
     var delegate: BeerListViewModelDelegate?
     
     var beerListVM = [BeerViewModel]()
     
-    init() {
+    init(service: PunkServicing = PunkService()) {
+        self.service = service
         loadBeerList()
     }
     
